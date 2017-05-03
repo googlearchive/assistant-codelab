@@ -1,0 +1,74 @@
+{
+  "animal-knowledge" : {
+    "first" : "-Kg8CZTEnuZdDjEovzZX",
+    "graph" : {
+      "-Kg8CZT9miUHUoGILFIK" : {
+        "a" : "dog"
+      },
+      "-Kg8CZTD2Upi0XThDTsl" : {
+        "a" : "cat"
+      },
+      "-Kg8CZTEnuZdDjEovzZX" : {
+        "n" : "-KgCKrui23xhY-ju4dcf",
+        "q" : "Does it bark?",
+        "y" : "-Kj4a07lS27Rp15-HMyn"
+      },
+      "-KgCKrtA7rVEEMcuDWlo" : {
+        "a" : "horse"
+      },
+      "-KgCKrui23xhY-ju4dcf" : {
+        "n" : "-Ki1lXQLWeCXIhTgJ8mn",
+        "q" : "Does it have hooves?",
+        "y" : "-KgCP-0tGqQDMR1xGJmy"
+      },
+      "-KgCP-0qD2PSmq7T6juc" : {
+        "a" : "goat"
+      },
+      "-KgCP-0tGqQDMR1xGJmy" : {
+        "n" : "-KgCKrtA7rVEEMcuDWlo",
+        "q" : "Is it known for eating garbage?",
+        "y" : "-KgCP-0qD2PSmq7T6juc"
+      },
+      "-Ki1lXOr1bcB5R_sp0uk" : {
+        "a" : "fish"
+      },
+      "-Ki1lXQLWeCXIhTgJ8mn" : {
+        "n" : "-Ki1w1RoyImMnTkxMmVx",
+        "q" : "Does it have scales?",
+        "y" : "-Kj4bbpElSqA6rjV7D75"
+      },
+      "-Ki1w1RoyImMnTkxMmVw" : {
+        "a" : "dolphin"
+      },
+      "-Ki1w1RoyImMnTkxMmVx" : {
+        "n" : "-Kj4Eji9z8TthNyFQv2F",
+        "q" : "Does it have a long nose?",
+        "y" : "-Ki1w1RoyImMnTkxMmVw"
+      },
+      "-Kj4Eji0PcX1MlDBXMju" : {
+        "a" : "whale"
+      },
+      "-Kj4Eji9z8TthNyFQv2F" : {
+        "n" : "-Kg8CZTD2Upi0XThDTsl",
+        "q" : "Does it have a blowhole?",
+        "y" : "-Kj4Eji0PcX1MlDBXMju"
+      },
+      "-Kj4a06GjIWXs7-qdSWA" : {
+        "a" : "wolf"
+      },
+      "-Kj4a07lS27Rp15-HMyn" : {
+        "n" : "-Kg8CZT9miUHUoGILFIK",
+        "q" : "Does it hunt?",
+        "y" : "-Kj4a06GjIWXs7-qdSWA"
+      },
+      "-Kj4bbnntA8moRuETxUc" : {
+        "a" : "snake"
+      },
+      "-Kj4bbpElSqA6rjV7D75" : {
+        "n" : "-Ki1lXOr1bcB5R_sp0uk",
+        "q" : "Does it slither?",
+        "y" : "-Kj4bbnntA8moRuETxUc"
+      }
+    }
+  }
+}
