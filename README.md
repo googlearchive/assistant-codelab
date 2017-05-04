@@ -5,9 +5,9 @@ This is not an official Google product.
 This is the source code for the App for Assistant with Firebase and API.AI
 codelab.
 
-You can use this app directly if you'd like to see the finished app but before
-you do follow the "Create a Firebase Project and Setup" step of the
-[Codelab instructions](https://codelabs.developers.google.com/codelabs/firebase-chatbot/)
+You can use this app directly from the `solution/` directory if you'd like to
+see the finished app. Follow the instructions in the "Create a Firebase Project
+and Setup" step of the [Codelab](https://codelabs.developers.google.com/codelabs/assistant-codelab/).
 
 ## How to make contributions?
 Please read and follow the steps in the [CONTRIBUTING.md](CONTRIBUTING.md)
