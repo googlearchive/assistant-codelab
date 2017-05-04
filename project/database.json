@@ -1,0 +1,34 @@
+{
+  "animal-knowledge" : {
+    "first" : "-Kg8CZTEnuZdDjEovzZX",
+    "graph" : {
+      "-Kg8CZT9miUHUoGILFIK" : {
+        "a" : "dog"
+      },
+      "-Kg8CZTD2Upi0XThDTsl" : {
+        "a" : "cat"
+      },
+      "-Kg8CZTEnuZdDjEovzZX" : {
+        "n" : "-KgCKrui23xhY-ju4dcf",
+        "q" : "Does it bark?",
+        "y" : "-Kg8CZT9miUHUoGILFIK"
+      },
+      "-KgCKrtA7rVEEMcuDWlo" : {
+        "a" : "horse"
+      },
+      "-KgCKrui23xhY-ju4dcf" : {
+        "n" : "-Kg8CZTD2Upi0XThDTsl",
+        "q" : "Does it have hooves",
+        "y" : "-KgCP-0tGqQDMR1xGJmy"
+      },
+      "-KgCP-0qD2PSmq7T6juc" : {
+        "a" : "goat"
+      },
+      "-KgCP-0tGqQDMR1xGJmy" : {
+        "n" : "-KgCKrtA7rVEEMcuDWlo",
+        "q" : "Is it known for eating garbage",
+        "y" : "-KgCP-0qD2PSmq7T6juc"
+      }
+    }
+  }
+}
