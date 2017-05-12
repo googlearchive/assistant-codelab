@@ -183,13 +183,8 @@ Okay, my first question is: ${snap.val().q}
         const update = {};
         update[branch] = q_node.key;
         graph.child(priorQuestion).update(update).then(() => {
-            const speech = `<speak>
-OK, thanks for the information! I'll remember to ask "${question}" to see if you're thinking of ${predicate} ${answer}.
-<break time="1">
-Would you like to play again?
-</speak>
-`;
-            assistant.setContext(WELCOME_CONTEXT, 1);
+            // TODO codelab-2: give the user an option to play again or end the conversation
+            const speech = "Ok, thanks for the information!";
             assistant.ask(speech);
         });
     }
