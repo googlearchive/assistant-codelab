@@ -1,5 +1,7 @@
 # Firebase Assistant Codelab
 
+**This repository is no longer actively maintained, and the accompanying codelab has been unpublished. It contains some information that is out of date.**
+
 This is not an official Google product.
 
 This is the source code for the App for Assistant with Firebase and API.AI
