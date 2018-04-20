@@ -146,7 +146,7 @@ Okay, my first question is: ${snap.val().q}
 
         const q_promise = graph.child(priorQuestion).once('value');
         const g_promise = graph.child(guess).once('value');
-        Promise.all([q_promise, g_promise]).then(results => {
+        return Promise.all([q_promise, g_promise]).then(results => {
             const q_snap = results[0];
             const g_snap = results[1];
 
@@ -164,6 +164,7 @@ The answer must be "yes" for ${new_thing}. What question should I use?
             assistant.setContext(ANSWER_CONTEXT, 2, answerParameters);
 
             assistant.ask(speech);
+            return true;
         });
     }
 
@@ -187,13 +188,13 @@ The answer must be "yes" for ${new_thing}. What question should I use?
         });
 
         let predicate = 'a';
-        if (['a','e','i','o','u'].indexOf(answer.charAt(0)) != -1) {
+        if (['a','e','i','o','u'].indexOf(answer.charAt(0)) !== -1) {
             predicate = 'an';
         }
 
         const update = {};
         update[branch] = q_node.key;
-        graph.child(priorQuestion).update(update).then(() => {
+        return graph.child(priorQuestion).update(update).then(() => {
             const speech = `<speak>
 OK, thanks for the information! I'll remember to ask "${question}" to see if you're thinking of ${predicate} ${answer}.
 <break time="1">
@@ -202,6 +203,7 @@ Would you like to play again?
 `;
             assistant.setContext(WELCOME_CONTEXT, 1);
             assistant.ask(speech);
+            return true;
         });
     }
 });

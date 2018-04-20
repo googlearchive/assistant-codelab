@@ -146,13 +146,14 @@ Okay, my first question is: ${snap.val().q}
 
         const q_promise = graph.child(priorQuestion).once('value');
         const g_promise = graph.child(guess).once('value');
-        Promise.all([q_promise, g_promise]).then(results => {
+        return Promise.all([q_promise, g_promise]).then(results => {
             const q_snap = results[0];
             const g_snap = results[1];
 
             // TODO codelab-1: set the proper contexts to learn the differentiation
             const speech = `I don't know how to tell a ${new_thing} from a ${g_snap.val().a}!`;
             assistant.ask(speech);
+            return true;
         });
     }
 
@@ -176,16 +177,17 @@ Okay, my first question is: ${snap.val().q}
         });
 
         let predicate = 'a';
-        if (['a','e','i','o','u'].indexOf(answer.charAt(0)) != -1) {
+        if (['a','e','i','o','u'].indexOf(answer.charAt(0)) !== -1) {
             predicate = 'an';
         }
 
         const update = {};
         update[branch] = q_node.key;
-        graph.child(priorQuestion).update(update).then(() => {
+        return graph.child(priorQuestion).update(update).then(() => {
             // TODO codelab-2: give the user an option to play again or end the conversation
             const speech = "Ok, thanks for the information!";
             assistant.ask(speech);
+            return true;
         });
     }
 });
